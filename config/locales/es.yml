@@ -5,66 +5,66 @@ es:
         spree/supplier:
           attributes:
             url:
-              invalid: es inválido. Por favor asegúrece que 'http://' esté incluido
-              not_responding: 'es inválido, no responde o ha redireccionado a otra url'
-  drop_ship_order_number: "Drop Ship Order #%{number}"
-  drop_ship_orders: Drop Ship Orders
-  drop_ship_settings: Drop Ship Settings
-  must_be_logged_in: 'Debe Estar Autenticado'
-  signup: Sign Up
-  signup_to_become_a_supplier: 'Autentíquese para ser un Suministrador'
+              invalid: es inválido. Por favor asegúrate de que has incluido "http://"
+              not_responding: 'es inválido, no responde o ha redireccionado a otra ur'l
+  drop_ship_order_number: "Pedido de Drop Ship número #%{number}"
+  drop_ship_orders: Pedidos de Drop Ship
+  drop_ship_settings: Ajustes de Drop Ship
+  must_be_logged_in: 'Debes estar identificado'
+  signup: Regístrate
+  signup_to_become_a_supplier: 'Registrate como vendedor'
   spree:
     admin:
-      drop_ship_settings:
+      drop_ship_settings: 
         update:
-          success: Drop ship settings successfully updated.
+          success: Los ajustes de Drop ship se actualizaron con éxito.
       orders:
         drop_ship_order_order_header:
           drop_ship_order_ids: DSO IDs
         edit:
-          approve_drop_ship_orders: Ordene aprovadas al suministrador
-          resend_drop_ship_orders: Reenviar ordenes al suministrador
-          drop_ship_order_approval_confirmation: Se le enviará una notificación por correo electrónico a cada suministrador. ¿Desea continuar?
+          approve_drop_ship_orders: Aprobar los pedidos del proveedor
+          resend_drop_ship_orders: Reenviar los pedidos del proveedor
+          drop_ship_order_approval_confirmation: Se le enviará una notificación por correo electrónico a cada proveedor. ¿Desea continuar?
         show:
           approve_drop_ship_orders: Ordene aprovadas al suministrador
           resend_drop_ship_orders: Reenviar ordenes al suministrador
           drop_ship_order_approval_confirmation: Se le enviará una notificación por correo electrónico a cada suministrador. ¿Desea continuar?
       suppliers:
         edit:
-          back_to_suppliers: De regreso a los suministradores 
+          back_to_suppliers: Volver a la lista de proveedores 
         new:
-          new_supplier: Nuevo Suministrador
+          new_supplier: Nuevo proveedor
         form:
-          supplier_details: Detalles del Suministrador
-          supplier_address: Dirección del Suministrador
+          supplier_details: Detalles del proveedor
+          supplier_address: Dirección del proveedor
       drop_ship_orders:
         deliver:
-          error: "La order %{number} no pudo ser enviada al suministrador."
-          success: "La order %{number} fue enviada al suministrador."
-        orders_sent: Todas las ordenes a los suministradores fueron enviadas
-        orders_not_sent: Algunas o todas las ordenes no pudieron ser enviadas. Por favor contacte directamente a los suministradores.
+          error: "El pedido %{number} no pudo ser enviado al proveedor."
+          success: "El pedido %{number} fue enviado al proveedor."
+        orders_sent: Todas los pedidos han sido enviados a los proveedores
+        orders_not_sent: Uno o más pedidos no han podido ser enviados. Por favor contacta directamente con los proveedores.
     drop_ship_order_mailer:
       supplier_order:
         hello: "Hola %{name},"
-        subject: "%{name} Orden al Suministrador #%{number}"
-        thank_you_again: "Gracias nuevamente por su negocio, <b>%{name}</b>"
+        subject: "%{name} Pedido del proveedor #%{number}"
+        thank_you_again: "Gracias por tu colaboración, <b>%{name}</b>"
     shared:
       unauthorized:
-        explained: No está autorizado a acceder a esta página.
+        explained: No estás autorizado a acceder a esta página.
         unauthorized: No autorizado
     supplier_mailer:
       welcome:
         hello: "Hola %{name},"
-        check_your_status: Puede revisar el estado de su pedido por
-        logging_into_your_account: Autentíquese.
-        once_your_request_is_approved: Una vez que su pedido sea aprobado podrá gestionar su inventario.
-        subject: 'Gracias por autenticarse. Por favor verifique la información.'
-        thank_you_again: "Gracias nuevamente por su negocio, <b>%{name}</b>"
-        thank_you_for_signing_up: Gracias por autenticarse para ser un suministrador.
+        check_your_status: Puedes revisar el estado de tu solicitud en
+        logging_into_your_account: Identifícate
+        once_your_request_is_approved: Una vez que tu solicitud sea aprobada podrás gestionar tu inventario.
+        subject: 'Gracias por registrarte. Por favor, verifica la información.'
+        thank_you_again: "Gracias nuevamente por tu colaboración, <b>%{name}</b>"
+        thank_you_for_signing_up: Gracias por registrarte para ser proveedor.
     suppliers:
-      already_signed_up: "Ya está autenticado para convertirse en un suministrador."
+      already_signed_up: "Ya está identificado como proveedor."
       create:
-        success: Gracias por autenticarse!
+        success: Gracias por registrarte!
   # TODO move to under activerecord model attributes
   supplier:
     address1: Dirección
@@ -77,6 +77,6 @@ es:
     state: Estado
     url: URL
     zipcode: Código Postal(ZipCode)
-  supplier_info: Información de suministradores
-  supplier_signup: Autenticación de Suministradores
-  suppliers: Suministradores
+  supplier_info: Información de proveedores
+  supplier_signup: Registro de proveedores
+  suppliers: Proveedores
