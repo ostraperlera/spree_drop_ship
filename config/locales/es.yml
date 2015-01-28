@@ -62,10 +62,7 @@ es:
         subject: "Gracias por registrarte. Por favor, verifica la información."
         thank_you_again: "Gracias nuevamente por tu colaboración, <b>%{name}</b>"
         thank_you_for_signing_up: "Gracias por registrarte para ser proveedor."
-    suppliers: 
-      already_signed_up: "Ya está identificado como proveedor."
-      create: 
-        success: "Gracias por registrarte!"
+    suppliers: Proveedores
   supplier: 
     address1: Dirección
     address2: "Dirección (continuar)"

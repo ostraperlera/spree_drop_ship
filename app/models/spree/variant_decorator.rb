@@ -8,7 +8,7 @@ module Spree
 
     private
 
-    durably_decorate :create_stock_items, mode: 'soft', sha: '4f82bc9c291bbef359b490e622b2b2c58d9691ee' do
+    durably_decorate :create_stock_items, mode: 'soft', sha: '40a37fdea4f3d8a1fe774911a603c013862545f5' do
       StockLocation.all.each do |stock_location|
         if stock_location.supplier_id.blank? || self.suppliers.pluck(:id).include?(stock_location.supplier_id)
           stock_location.propagate_variant(self) if stock_location.propagate_all_variants?
